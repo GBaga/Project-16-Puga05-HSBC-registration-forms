@@ -1,0 +1,253 @@
+/* @import url(./fonts.css); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C727F;
+    flex-direction: column;
+    font-family: 'Inter', system-ui;
+    height: 100vh;
+    position: relative;
+}
+
+/* header css */
+header {
+    width: 100%;
+    height 60px;
+    background-color: black;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #E12828;
+}
+
+/* make underline for navbar buttons */
+header li {
+    position: relative;
+    line-height: 24px;
+}
+
+header li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+header li:hover::after {
+    width: 100%;
+}
+
+/* main css which changes according different pages */
+
+main {
+    width: 500px;
+    height: 628px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.h1-description {
+    margin: 5px 0 35px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 120px;
+    height: 44px;
+    border: 1px solid #D2D5DA;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13px;
+}
+
+.line {
+    width: 178px;
+    height: 1px;
+    border: none;
+    outline: none;
+    background-color: #D2D5DA;
+}
+
+.line-box .or {
+    color: #D2D5DA;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+}
+
+.label-star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 15px;
+    position: absolute;
+    top: -7px;
+    left: 13px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.icon-required {
+    align-self: flex-start;
+    margin: 0 3px;
+    width: fit-content;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    /* Position 14px left from the right edge */
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #D2D5DA;
+}
+
+.email {
+    background: url('../assets/images/icon-mail.svg') no-repeat;
+    background-position: calc(100% - 14px) center;
+}
+
+.email-row {
+    margin-bottom: 15px;
+}
+
+.password {
+    background: url('../assets/images/icon-eye.svg') no-repeat;
+    background-position: calc(100% - 14px) center;
+}
+
+input::placeholder {
+    color: #6C727F;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    background-color: #E12828;
+    color: white;
+    padding: 16px 0;
+    font-size: 26px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b30303;
+    transition: background-color 0.3s ease;
+}
+
+span {
+    height: 19px;
+    display: flex;
+    height: 19px;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.checkbox {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+a {
+    text-decoration: underline;
+    color: #E12828;
+    height: 17px;
+}
+
+/* footer styles */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+footer .attribution {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+footer p {
+    font-size: 13px;
+    line-height: 200%;
+}
+
+.attribution a {
+    color: yellow;
+}

@@ -1,0 +1,276 @@
+/* @import url(./fonts.css); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C727F;
+    flex-direction: column;
+    font-family: 'Inter', system-ui;
+    height: 100vh;
+    position: relative;
+}
+
+/* header css */
+header {
+    width: 100%;
+    height 60px;
+    background-color: black;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #E12828;
+}
+
+/* make underline for navbar buttons */
+header li {
+    position: relative;
+    line-height: 24px;
+}
+
+header li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 1px;
+    width: 0%;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+header li:hover::after {
+    width: 100%;
+}
+
+/* main css which changes according different pages */
+
+main {
+    width: 500px;
+    height: 815px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    padding: 60px;
+    margin-top: 20px;
+
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.h1-description {
+    margin: 5px 0 35px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.name-box {
+    height: 46px;
+    display: flex;
+    column-gap: 25px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+}
+
+.label-star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 15px;
+    position: absolute;
+    top: -7px;
+    left: 13px;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.icon-required {
+    align-self: flex-start;
+    margin: 0 3px;
+    width: fit-content;
+}
+
+.input-row {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    /* Position 14px left from the right edge */
+    height: 46px;
+    border-radius: 8px;
+    border: 1px solid #D2D5DA;
+}
+
+.email {
+    background: url('../assets/images/icon-mail.svg') no-repeat;
+    background-position: calc(100% - 14px) center;
+}
+
+.password {
+    background: url('../assets/images/icon-eye.svg') no-repeat;
+    background-position: calc(100% - 14px) center;
+}
+
+.city {
+    background: url('../assets/images/icon-location.svg') no-repeat 16px center,
+        url('../assets/images/icon-dropdown.svg') no-repeat right 14px center;
+    /* background-size: 18px; */
+    padding-left: 48px;
+    /* icon width + 14px margin */
+    -webkit-appearance: none;
+    /* Remove default arrow for Chrome */
+    -moz-appearance: none;
+    /* Remove default arrow for Firefox */
+    appearance: none;
+    /* Remove default arrow for other browsers */
+}
+
+.city option,
+.nationality option {
+    color: black;
+}
+
+.city:disabled,
+.nationality:disabled,
+.input-row::placeholder {
+    color: #6C727F;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.birthday {
+    background: url('../assets/images/icon-calendar.svg') no-repeat right 14px center;
+    text-transform: uppercase;
+}
+
+.birthday::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    /* Make the default icon invisible */
+    cursor: pointer;
+}
+
+.nationality {
+    background: url('../assets/images/united-states-of-america.svg') no-repeat 16px center,
+        url('../assets/images/icon-dropdown.svg') no-repeat right 14px center;
+    /* background-size: 18px; */
+    padding-left: 48px;
+    /* icon width + 14px margin */
+    -webkit-appearance: none;
+    /* Remove default arrow for Chrome */
+    -moz-appearance: none;
+    /* Remove default arrow for Firefox */
+    appearance: none;
+    /* Remove default arrow for other browsers */
+}
+
+input::placeholder,
+.city,
+.nationality,
+.birthday {
+    color: #6C727F;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    background-color: #E12828;
+    color: white;
+    padding: 16px 0;
+    font-size: 26px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b30303;
+    transition: background-color 0.3s ease;
+}
+
+span {
+    height: 51px;
+    display: flex;
+    font-size: 14px;
+    column-gap: 12px;
+    text-align: left;
+    margin: 10px 0;
+
+}
+
+strong {
+    text-decoration: underline;
+}
+
+.checkbox {
+    align-self: flex-start;
+    transform: scale(1.27);
+    /* Scale to increase size from 13px to 16px */
+    -webkit-transform: scale(1.27);
+    /* For Safari */
+}
+
+a {
+    text-decoration: underline;
+    color: #E12828;
+    height: 17px;
+}
+
+/* footer styles */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+footer .attribution {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+footer p {
+    font-size: 13px;
+    line-height: 200%;
+}
+
+.attribution a {
+    color: yellow;
+}

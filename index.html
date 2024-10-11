@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/index-style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icon-hsbc.png">
+  <title>Puga 05 | HSBC Registration Forms</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./welcome.html">Welcome</a></li>
+      </ul>
+      <ul>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+      <ul>
+        <li><a href="./card.html">Credit Card</a></li>
+      </ul>
+      <ul>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="./password.html">Forget Password</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome</h1>
+    <p class="h1-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Quam duis vitae curabitur amet, fermentum lorem.
+    </p>
+    <form action="/submit" method="post">
+
+      <div class="name-box">
+
+        <div class="input-box">
+          <label for="first-name">
+            <div class="label-star">
+              First name
+              <img class="icon-required" src="../HSBC-registration-forms/assets/images/icon-required.svg"
+                alt="icon-required">
+            </div>
+            <input type="text" name="first-name" class="first-name input-row" id="first-name" placeholder="Your name">
+            <!-- placeholder icon as the background in css style -->
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="last-name">
+            <div class="label-star">
+              Last name
+              <img class="icon-required" src="../HSBC-registration-forms/assets/images/icon-required.svg"
+                alt="icon-required">
+            </div>
+            <input type="text" name="last-name" class="last-name input-row" id="last-name" placeholder="Your last name">
+            <!-- placeholder icon as the background in css style -->
+          </label>
+        </div>
+
+      </div>
+
+      <div class="input-box">
+        <label for="email">
+          <div class="label-star">
+            E-mail
+            <img class="icon-required" src="../HSBC-registration-forms/assets/images/icon-required.svg"
+              alt="icon-required">
+          </div>
+          <input type="email" name="email" class="email input-row" id="email" placeholder="yourmail@gmail.com">
+          <!-- placeholder icon as the background in css style -->
+        </label>
+      </div>
+      <div class="input-box">
+        <label for="password">
+          <div class="label-star">
+            Password
+            <img class="icon-required" src="../HSBC-registration-forms/assets/images/icon-required.svg"
+              alt="icon-required">
+          </div>
+          <input type="password" name="password" class="password input-row" id="password" placeholder="**********">
+          <!-- placeholder icon as the background in css style -->
+        </label>
+      </div>
+      <div class="input-box">
+        <label for="city">
+          <div class="label-star">
+            City
+          </div>
+          <select class="input-row city" id="city" name="city">
+            <option value="" disabled selected>Select city</option>
+            <option value="Tbilisi">Tbilisi</option>
+            <option value="Kutaisi">Kutaisi</option>
+            <option value="Batumi">Batumi</option>
+          </select>
+        </label>
+      </div>
+      <div class="input-box">
+        <label for="birthday">
+          <div class="label-star">
+            Birthday
+          </div>
+          <input type="date" name="birthday" class="birthday input-row" id="birthday" placeholder="DD / MM / YYYY">
+          <!-- placeholder icon as the background in css style -->
+        </label>
+      </div>
+      <div class="input-box">
+        <label for="nationality">
+          <div class="label-star">
+            Nationality
+          </div>
+          <select class="input-row nationality" id="nationality" name="nationality">
+            <option value="" disabled selected>Your nationality</option>
+            <option value="USA">USA</option>
+            <option value="Georgia">Georgia</option>
+            <option value="UK">UK</option>
+          </select>
+        </label>
+      </div>
+
+      <span>
+        <input type="checkbox" name="remember-me" class="checkbox">
+        <div>Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. <strong>Gravida eget ultricies </strong>pharetra scelerisque duis cursus.</div>
+      </span>
+      <button type="submit">Enter</button>
+
+    </form>
+
+
+  </main>
+  <!-- <footer>
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://puga.ge/" target="_blank">Frontend Mentor & <strong>Puga</strong></a>
+      </p>
+      <p>
+        Coded by <a href="https://www.linkedin.com/in/goga-bagauri-16145344/">Goga Bagauri</a>
+      </p>
+    </div>
+  </footer> -->
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/card-style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icon-hsbc.png">
+  <title>Puga 05 | HSBC Registration Forms</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./welcome.html">Welcome</a></li>
+      </ul>
+      <ul>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
+      <ul>
+        <li><a href="./card.html">Credit Card</a></li>
+      </ul>
+      <ul>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="./password.html">Forget Password</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <form action="/submit" method="post">
+
+      <div class="input-box">
+        <label for="card-name">
+          <div class="label-star">
+            Card name
+          </div>
+          <input type="text" name="card-name" class="card-name input-row" id="card-name"
+            placeholder="Give this card a name">
+          <!-- placeholder icon as the background in css style -->
+        </label>
+      </div>
+
+      <img src="./assets/images/img- card.jpg" alt="image-card">
+
+      <div class="name-box">
+        <div class="input-box">
+          <label for="first-name">
+            <div class="label-star">
+              First name
+            </div>
+            <input type="text" name="first-name" class="first-name input-row" id="first-name" placeholder="Your name">
+            <!-- placeholder icon as the background in css style -->
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="last-name">
+            <div class="label-star">
+              Last name
+            </div>
+            <input type="text" name="last-name" class="last-name input-row" id="last-name" placeholder="Your last name">
+            <!-- placeholder icon as the background in css style -->
+          </label>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <label for="card-number">
+          <div class="label-star">
+            Card number
+          </div>
+          <input type="number" name="card-number" class="card-number input-row" id="card-number"
+            placeholder="**** **** **** ****">
+          <!-- placeholder icon as the background in css style -->
+        </label>
+      </div>
+
+      <div class="month-year-cvc-box">
+
+        <div class="input-box">
+          <label for="month">
+            <div class="label-star">
+              Month
+            </div>
+            <!-- <input type="month" name="month" class="month input-row" id="month" placeholder="Select"> -->
+            <!-- placeholder icon as the background in css style -->
+            <select name="month" class="month input-row" id="month">
+              <option value="" disabled selected>Select</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="year">
+            <div class="label-star">
+              Year
+            </div>
+            <input type="number" class="year input-row" id="year" name="year" placeholder="Select" pattern="\d{4}">
+            <!-- placeholder icon as the background in css style -->
+          </label>
+        </div>
+        <div class="input-box">
+          <label for="cvc">
+            <div class="label-star">
+              CVC
+            </div>
+            <input type="password" name="cvc" class="cvc input-row" id="cvc" placeholder="***">
+            <!-- placeholder icon as the background in css style -->
+          </label>
+        </div>
+      </div>
+      <button type="submit">Enter</button>
+    </form>
+
+  </main>
+
+  <!-- <footer>
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://puga.ge/" target="_blank">Frontend Mentor & <strong>Puga</strong></a>
+      </p>
+      <p>
+        Coded by <a href="https://www.linkedin.com/in/goga-bagauri-16145344/">Goga Bagauri</a>
+      </p>
+    </div>
+  </footer> -->
+</body>
+
+</html>
